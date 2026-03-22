@@ -1,0 +1,8 @@
+data/
+tests/
+notebook.ipynb
+train.py
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
