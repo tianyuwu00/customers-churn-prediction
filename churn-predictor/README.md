@@ -125,5 +125,10 @@ docker run -p 8000:8000 churn-predictor
 ## Tests
 
 ```bash
-pytest tests/test_predict.py -v
+uv pip install -r requirements-dev.txt
+uv run python -m pytest -v
 ```
+
+On macOS, LightGBM also needs OpenMP: `brew install libomp`.
+
+Tests run automatically on GitHub Actions for pushes to `main` and pull requests (`.github/workflows/tests.yml`).
